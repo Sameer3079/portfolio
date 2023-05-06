@@ -28,7 +28,7 @@ export default function Card({
         <div className="grid grid-cols-2 gap-2">
           <div className="w-full">
             <Image
-              alt="Auth.js logo"
+              alt={"Cover image of " + title}
               src={coverImage}
               width={250}
               height={250}
@@ -49,9 +49,14 @@ export default function Card({
               ))}
             </div>
             <div className="flex text-sm">
-              <a className="flex rounded-full items-center justify-center bg-black text-white space-x-2 px-4 mr-3" href={demoLink}
+              <a
+                className="mr-3 flex items-center justify-center space-x-2 rounded-full bg-black px-4 text-white"
+                href={demoLink}
                 target="_blank"
-                rel="noopener noreferrer">Demo</a>
+                rel="noopener noreferrer"
+              >
+                Demo
+              </a>
               <a
                 className="flex h-10 max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-gray-600 shadow-md transition-colors hover:border-gray-800"
                 href={repoLink}

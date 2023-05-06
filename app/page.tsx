@@ -34,17 +34,14 @@ export default async function Home() {
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>
-            Hi, I{`'`}m Sameer <br /> a Web developer
+            Hi, I{`'`}m Sameer <br /> a Full-stack Engineer
           </Balancer>
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          <Balancer>
-            An opinionated collection of components, hooks, and utilities for
-            your Next.js project.
-          </Balancer>
+          <Balancer>5+ years of experience</Balancer>
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
@@ -85,7 +82,14 @@ export default async function Home() {
       </div>
       <div className="my-10 grid w-3/4 animate-fade-up grid-cols-1 gap-5 px-5">
         {projects.map(
-          ({ name, description, coverImage,demoLink, repoLink, technologies }) => (
+          ({
+            name,
+            description,
+            coverImage,
+            demoLink,
+            repoLink,
+            technologies,
+          }) => (
             <Card
               key={name}
               title={name}
@@ -107,9 +111,25 @@ const projects = [
     name: "Chat Room",
     description: `A simple unauthenticated global chat room. Supports sending images, infinite scrolling, and optimistic updates for faster responsiveness.`,
     coverImage: "/chat-room-cover-image.png",
-    technologies: ["Next JS", "React JS", "tRPC", "React Query", "TypeScript", "MongoDB", "AWS S3"],
+    technologies: [
+      "Next JS",
+      "React JS",
+      "tRPC",
+      "React Query",
+      "TypeScript",
+      "MongoDB",
+      "AWS S3",
+    ],
     demoLink: "https://chat-room-ten-gules.vercel.app",
     repoLink: "https://github.com/Sameer3079/chat-room",
+  },
+  {
+    name: "Adeptus Notes - A Modern Notes app",
+    description: "A highly customizable notes & journal app",
+    coverImage: "",
+    technologies: [],
+    demoLink: "",
+    repoLink: "",
   },
   {
     name: "To do app",
@@ -117,6 +137,7 @@ const projects = [
       "A privacy focused simple to-do app that stores all-data locally.",
     coverImage: "",
     technologies: [],
+    demoLink: "",
     repoLink: "",
   },
 ];
