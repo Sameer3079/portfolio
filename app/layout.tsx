@@ -7,17 +7,15 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Sameer Basil - Software Engineer",
-  description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+  title: "Sameer Basil - Fullstack Engineer",
+  description: "A software engineer with 5+ years of industry experience.",
   twitter: {
     card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
-    description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    title: "Sameer Basil - Fullstack Engineer",
+    description: "A software engineer with 5+ years of industry experience.",
     creator: "@SameerBasi25709",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("https://sameer-basil.com"),
   themeColor: "#FFF",
 };
 
