@@ -6,6 +6,8 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
+import LinkedIn from "@/components/shared/icons/linkedin";
+import Mail from "@/components/shared/icons/mail";
 
 const emailLink = "mailto:smrbasil4@gmail.com";
 
@@ -53,20 +55,7 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg
-              className="h-4 w-4 group-hover:text-black"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4L20 20H4L12 4Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <Mail />
             <p>Contact me</p>
           </a>
           <a
@@ -77,6 +66,15 @@ export default async function Home() {
           >
             <Github />
             <p>GitHub Profile</p>
+          </a>
+          <a
+            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-cyan-900 px-5 py-2 text-sm text-white shadow-md transition-colors hover:border-gray-800"
+            href="https://www.linkedin.com/in/sameer-basil-b5961a49/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedIn />
+            <p>LinkedIn</p>
           </a>
         </div>
       </div>
